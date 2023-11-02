@@ -1,5 +1,5 @@
 ## Neural Connectivity
-This project is an implementation to analyse directed information flows using data from simultaneous recorded visual areas.  
+This project is an implementation to analyse directed information flows using data from simultaneous recorded visual areas. 
 
 ## Requirements 
 
@@ -14,17 +14,33 @@ conda activate <env-name>
 Replace `<env-name>` with the desired environment name.
 
 
+
+
 ## Install Python libraries  
 ```
 pip install -r requirements.txt
 ```
 
 
+
+
+## Datasets
+
+The datasets used in the analysis [feather](https://github.com/wesm/feather) files with the format below. 
+Each row indicate the spike of a unit at specified time within a given trial. 
+
+![asa](./images/sample-data.png)
+
+* `times` - indicates the spike times in seconds.
+* `trial` - the id of the trial 
+* `stimn` - the id of stimulus under which the spike was recorded
+* `id` - unit id (eg `ET012_left_pre_LM_1` refers to an `LM` unit with id `1` in a "pre" training experiment under a recording with id `ET012_left`) 
+
 # Organization 
 Folders 
 
 
-* `code` - contains the main implementation to identify the directed infromation(DI) values between neuron groups(layers, cortical areas etc.) 
+* `code` - contains the main implementation to identify the directed information(DI) values between neuron groups(layers, cortical areas etc.) 
 
 * `analysis` (and `notebooks/lasso-method` )  -  contain scripts to generate the heatmaps and other analysis results
 
@@ -64,3 +80,5 @@ python lasso_select_parentset.py --config <config-path>
 ```
 
 ### 4) Postprocessing 
+
+The postprocessing scripts aggregate the Directed Information results into the plots included in the manuscript. 
