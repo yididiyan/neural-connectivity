@@ -1,0 +1,19 @@
+## Dataset files 
+datasets:
+  - /Users/yido/Code/neuroscience/YuTang/2022-spring-Yu-v01/data/pre_spk_times.feather
+  - /Users/yido/Code/neuroscience/YuTang/2022-spring-Yu-v01/data/post_9_spk_times.feather
+  #- /Users/yido/Code/neuroscience/YuTang/2022-spring-Yu-v01/data/post_15_spk_times.feather
+
+## Location for intermediate data 
+data_dir: /Users/yido/Code/neuroscience/output_dir/YuTang
+
+
+
+## Trial observation window 
+observation_window: '500, 1500'
+
+## DI values 
+max_number_parents: 3
+
+## markov order 
+markov_order: 10
