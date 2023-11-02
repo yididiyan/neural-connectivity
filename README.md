@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Datasets
 
-The datasets used in the analysis [feather](https://github.com/wesm/feather) files with the format below. 
+The datasets used in the analysis were [feather](https://github.com/wesm/feather) files with the format below. 
 Each row indicate the spike of a unit at specified time within a given trial. 
 
 ![asa](./images/sample-data.png)
@@ -81,4 +81,7 @@ python lasso_select_parentset.py --config <config-path>
 
 ### 4) Postprocessing 
 
-The postprocessing scripts aggregate the Directed Information results into the plots included in the manuscript. 
+The postprocessing scripts aggregate the directed information(DI) results into the plots included in the manuscript. 
+
+* `notebooks/lasso-method/calculate_pvalues.py` - calculates p-values for differences between "pre" and "post" experiment 
+* `notebooks/lasso-method/all_stimuli_plots.py` - aggregates the raw DI values (example shown in the script)given the aggregate data and generates the plots in the manuscript. 
