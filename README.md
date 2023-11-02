@@ -79,9 +79,11 @@ python find_active_times.py --config <config-path>
 python lasso_select_parentset.py --config <config-path>
 ```
 
+
+We run the above three steps for all dataset("pre", "post_9", and "post_15") and all 25 stimuli in each dataset.
+
 ### 4) Postprocessing 
 
 The postprocessing scripts aggregate the directed information(DI) results into the plots included in the manuscript. 
 
-* `notebooks/lasso-method/calculate_pvalues.py` - calculates p-values for differences between "pre" and "post" experiment 
-* `notebooks/lasso-method/all_stimuli_plots.py` - aggregates the raw DI values (example shown in the script)given the aggregate data and generates the plots in the manuscript. 
+* `notebooks/lasso-method/Post Processing.ipynb` - shows the steps necessary to calculate p values and plot the results in a PDF format. 

@@ -166,15 +166,16 @@ if __name__ == '__main__':
     parser.add_argument('--n-runs', action='store', type=int, default=5*10**4)
 
     args = parser.parse_args()
-    print(vars(args))
+    print(vars(args), args.data)
+    arg_vals = vars(args)
 
     areas = ['AL', 'LM', 'V1']
 
     pvals = {}
+    # import ipdb; ipdb.set_trace()
 
     ## save plot data 
-    data = utils.read_pickle_file(args.data)
-
+    data = utils.read_pickle_file(arg_vals['data'])
 
     for a1 in areas:
         pvals[a1] = {}

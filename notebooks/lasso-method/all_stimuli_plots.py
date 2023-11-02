@@ -240,11 +240,19 @@ def plot_heatmaps_with_all_stimuli(pre_files, post_files, post_title, pre_title=
 
 
 if __name__ == '__main__':
+    import pickle 
 
-
-    base_dir = '../../../'
+    # directory where the output folder resides 
+    # path to generated DI files -- see example below 
+    #  
+    base_dir = '../../../' 
     # import ipdb; ipdb.set_trace()
     data = read_plot_data(f'{base_dir}/', 
                  f'{base_dir}/output_stimuli_9/DI_values/pre_spk_times/9/500_1500/lasso_0.5/*.pkl', 
                 f'{base_dir}/output_stimuli_9/DI_values/post_9_spk_times/9/500_1500/lasso_0.5/*.pkl')
-    import ipdb; ipdb.set_trace()
+    with open('./results.pkl', 'wb') as f:
+        pickle.dump(data, f)
+
+    
+
+
