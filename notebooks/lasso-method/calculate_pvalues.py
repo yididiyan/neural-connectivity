@@ -60,7 +60,6 @@ def get_pval_diff_med(edges1,edges2,prop_1, true_diff, n_runs=10**6):
         return 1.0
     
     input_dic = {'edges':list(edges1)+list(edges2),'prop':prop_1}
-#     numruns = 10**4#10**6 ## Question 2: how to configure the nrums  
     print('Using %i runs'%(n_runs))
     
     vals = []
@@ -148,12 +147,6 @@ def correct_pvalues(p_values, groups=['AL', 'LM', 'V1'], area_filter=[]):
     
     return corrected_pvals
 
-# %%
-# usage
-# area_1, area_2  = 'V1', 'LM'
-# calculate_p_value(data_9['raw'][area_1][area_2]['pre'], 
-#                   data_9['raw'][area_1][area_2]['post'], 
-#                   true_diff=np.reshape(data_9['data'][area_1][area_2].T, (5 * 5)))
     
 import argparse
 
@@ -172,8 +165,7 @@ if __name__ == '__main__':
     areas = ['AL', 'LM', 'V1']
 
     pvals = {}
-    # import ipdb; ipdb.set_trace()
-
+    
     ## save plot data 
     data = utils.read_pickle_file(arg_vals['data'])
 

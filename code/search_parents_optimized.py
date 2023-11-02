@@ -176,7 +176,6 @@ class SearchParentSet():
     
     def generate_par_tuples_grd_limited(self, cellY, DI,k):
         """
-        --> revised May 31, 2018
         multiple parts
         ['all2all', 'groups','layers','layers-groups']    
         :params cellY the central unit/cell we want to model 

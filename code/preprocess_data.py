@@ -21,7 +21,7 @@ import argparse
 
 
 '''
-Preprocessing Yu'Tang's Data 
+Preprocessing
 '''
 
 def get_recording_details(id_, index): 
@@ -43,7 +43,7 @@ def get_recording_details(id_, index):
 def preprocess_dataset(data, config):
     '''
     Function expands the information in the id column 
-    :param data - Yu Tang's pandas object 
+    :param data - pandas object 
     '''
 
     ## Dont preprocess twice 
