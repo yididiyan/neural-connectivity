@@ -1,5 +1,5 @@
 ## Neural Connectivity
-This project is an implementation to analyse directed information flows using data from simultaneous recorded visual areas. 
+This project is an implementation to analyse information flows in simultaneous recorded visual areas using directed information(DI).
 
 ## Requirements 
 
@@ -42,7 +42,7 @@ Folders
 
 * `code` - contains the main implementation to identify the directed information(DI) values between neuron groups(layers, cortical areas etc.) 
 
-* `analysis` (and `notebooks/lasso-method` )  -  contain scripts to generate the heatmaps and other analysis results
+* `analysis` (and `notebooks/lasso-method` )  -  contain scripts for postprocessing and generating heatmaps and other analysis results
 
 
 
