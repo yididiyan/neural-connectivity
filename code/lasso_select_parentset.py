@@ -42,7 +42,7 @@ class LassoParentSelection():
                 cv = 5, 
                 Cs = Cs,
                 using_all_data=False,
-                area_filter = None, # TODO: Make this configurable 
+                area_filter = None,
                 calculate_rates=False,
                 test_size=0.5 # test size to use
                 ) -> None:
@@ -197,7 +197,7 @@ class LassoParentSelection():
         
         for i in STIMULI:
 
-            data = prepare_data_(i, Xunit_ids) # TODO change this to i
+            data = prepare_data_(i, Xunit_ids) 
             if data == None:
                 continue
             

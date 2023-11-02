@@ -149,7 +149,6 @@ class ModelComparator(object):
     @staticmethod
     def get_entropy_and_mdl_2(params, endog, exog):
         '''
-        TODO:// Ask whether the log here should be natural log or log2??? 
         Looks like internal statsmodel uses log and not log2 
         '''
         exparg = np.dot(exog, params)

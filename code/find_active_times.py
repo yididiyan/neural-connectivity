@@ -89,7 +89,6 @@ class ActiveTimes():
             times_for_fitting = np.zeros(np.shape(active_times))
             
             ## Decide times for fitting 
-            ## TODO: too many unnecessary iterations 
             ## Changing it to two optimized for loops may help 
             for t in range(np.size(times_for_fitting)):
                 

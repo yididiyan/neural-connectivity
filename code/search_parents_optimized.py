@@ -298,7 +298,6 @@ class SearchParentSet():
 
     def get_parents(self, tpl):
         '''
-        # TODO: describe what the tuple has 
         :param tpl 
         :pram config - all configurations of the run
         :param dataset - the dataset we're currently looking at 
