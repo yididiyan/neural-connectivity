@@ -87,3 +87,18 @@ We run the above three steps for all dataset("pre", "post_9", and "post_15") and
 The postprocessing scripts aggregate the directed information(DI) results into the plots included in the manuscript. 
 
 * `notebooks/lasso-method/Post Processing.ipynb` - shows the steps necessary to calculate p values and plot the results in a PDF format. 
+
+## Citation 
+Please consider citing the following work if you use the code in this repository. 
+```
+@article{tang2023visual,
+  title={Visual experience induces 4--8 Hz synchrony between V1 and higher-order visual areas},
+  author={Tang, Yu and Gervais, Catherine and Moffitt, Rylann and Nareddula, Sanghamitra and Zimmermann, Michael and Nadew, Yididiya Y and Quinn, Christopher J and Saldarriaga, Violeta and Edens, Paige and Chubykin, Alexander A},
+  journal={Cell reports},
+  volume={42},
+  number={12},
+  year={2023},
+  publisher={Elsevier}
+}
+```
+ 
